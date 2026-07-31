@@ -1,38 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>HAPPY NATIONAL GIRLS FRIENDS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
-  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
-  <link rel="stylesheet" href="styles/style.css" media="all">
+<title>Untuk Kamu ❤️</title>
+
+<link rel="stylesheet" href="styles/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
-  <canvas id=c></canvas>
-  <canvas id="confetti"></canvas>
-  <div class="container" id="count">
-    <h1 id="head">Countdown to your birthday:</h1>
-    <ul>
-      <li><span id="day"></span>days</li>
-      <li><span id="hour"></span>hours</li>
-      <li><span id="minute"></span>minutes</li>
-      <li><span id="second"></span>seconds</li>
-    </ul>
-  </div>
-  <div id="merrywrap" class="merrywrap">
-    <canvas id="snowfall"></canvas>
-    <div class="giftbox">
-      <div class="cover">
-        <div></div>
-      </div>
-      <div class="box"></div>
-    </div>
-</body>
-<script src="scripts/confetti.min.js" charset="utf-8"></script>
-<script src="scripts/index.js" charset="utf-8"></script>
 
+<div class="background"></div>
+<div class="hearts"></div>
+<div class="flowers"></div>
+<div class="sparkles"></div>
+<div class="bubbles"></div>
+
+<div class="container">
+
+    <h1 class="title">
+        Ada Hadiah Buat Kamu 💖
+    </h1>
+
+    <p class="subtitle">
+        Klik kadonya ya cantik ✨
+    </p>
+
+    <div class="gift-wrapper">
+
+        <div id="gift" class="gift">
+
+            <div class="lid"></div>
+
+            <div class="box"></div>
+
+            <div class="ribbon-vertical"></div>
+
+            <div class="ribbon-horizontal"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="surprise" class="surprise hidden">
+
+    <div class="card">
+
+        <img
+        src="assets/foto.jpg"
+        class="photo"
+        alt="Foto">
+
+        <h2>Untuk Kamu ❤️</h2>
+
+        <p>
+            Makasih ya udah hadir.
+            Semoga hari-harimu selalu dipenuhi
+            kebahagiaan, senyuman,
+            dan semua hal baik.
+            Jangan lupa bahagia terus yaa 🤍
+        </p>
+
+    </div>
+
+</div>
+
+<audio id="music" loop>
+<source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="scripts/script.js"></script>
+
+</body>
 </html>
